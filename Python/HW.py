@@ -1,21 +1,21 @@
 import random
-a='new'
+input_digit='new'
 
 while True:
     txt=''
     try: 
-        if int(a)>=1 and int(a)<=10:
-            if int(a)==b:
+        if int(input_digit)>=1 and int(input_digit)<=10:
+            if int(intinput_digit)==random_digit:
                 txt='Вы выиграли.\nНачинаем новый раунд\n'
-                b=random.randint(1,10)
-            elif  int(a) > b:
+                random_digit=random.randint(1,10)
+            elif  int(input_digit) > random_digit:
                 txt="Много.\n"
             else:
                 txt="Мало.\n"
     except:
-        if a=="exit":
+        if input_digit=="exit":
             break
-        if a=="new":
-            b=random.randint(1,10)
+        if input_digit=="new":
+            random_digit=random.randint(1,10)
             txt="Начинаем новый раунд\n"
-    a=input(txt+'Введите число от 1 до 10\nexit для выхода, или new для нового раунда\n')
+    input_digit=input(txt+'Введите число от 1 до 10\nexit для выхода, или new для нового раунда\n')
